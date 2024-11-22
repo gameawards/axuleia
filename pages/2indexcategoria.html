@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" sizes="64x64"
+        href="https://i.im.ge/2024/05/26/KayUe6.axuleia-awards-removebg.webp">
+    <title>Axuleia Game Awards</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url(../assets/gotybackground.png);
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+
+        .navbar {
+            background-color: rgb(232, 164, 119);
+            padding: 8px 30px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .exit {
+            margin-right: 1px;
+            /* Ajuste conforme necessário */
+            margin-left: 75px;
+        }
+
+        .exit img {
+            width: 30px;
+            /* Ajuste o tamanho da imagem conforme necessário */
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+
+        }
+
+        .navbar li {
+            margin-left: 650px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 20px;
+            transition: color 0.3s ease;
+
+        }
+
+        .navbar a:hover {
+            color: white;
+        }
+
+        .button {
+            margin-top: -33px;
+            margin-left: 1560px;
+            background-color: transparent;
+            padding: 1px;
+            flex-direction: column;
+            width: 200px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .NEXT {
+            padding: 60px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+            transition: color 0.3s, background-color 0.3s, transform 0.3s;
+            width: 200px;
+        }
+
+        .NEXT:hover {
+            color: white;
+        }
+
+        .data p {
+            margin: 0;
+            font-size: 65px;
+            color: rgb(232, 164, 119);
+
+        }
+
+        .data {
+            margin-top: 170px;
+            margin-left: 0;
+            margin-right: 0;
+            text-align: center;
+
+
+            padding: 20px;
+            font-weight: bold;
+            overflow: hidden;
+            /* Adicionado para corrigir o layout */
+            position: absolute;
+        }
+
+        .texto-nomennes p {
+            margin: 0;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .texto-nomennes {
+            position: absolute;
+            margin-top: 250px;
+            padding: 20px;
+            font-weight: bold;
+            /* Adicionado para corrigir o layout */
+        }
+
+        .button1 {
+            margin-top: 400px;
+            margin-right: 1290px;
+            background-color: transparent;
+            padding: 1px;
+            flex-direction: column;
+            width: 250px;
+            border: 0px solid #ffffff;
+            position: absolute;
+            z-index: 1;
+            transition: border-color 1s
+        }
+
+        .dicord-button1 {
+            height: 386px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+            transition: border-color 1s, color 0.3s, background-color 0.3s, transform 0.3s;
+            width: 250px;
+            background-size: cover;
+            background: url('interrogação.mp4');
+            background-size: cover;
+
+        }
+
+        .dicord-button1:hover {
+            background-color: rgb(202, 152, 103);
+            color: rgb(0, 0, 0);
+            transform: translate(10px, -10px);
+        }
+
+        .elemento {
+            margin-top: 400px;
+            margin-right: 1290px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            transition: box-shadow 0.5s ease;
+            position: absolute;
+        }
+
+        .elemento.hover {
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transform: translate(5px, -5px);
+        }
+
+        .elemento2 {
+            margin-top: 405px;
+            margin-right: 1300px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            transition: box-shadow 0.5s ease;
+            position: absolute;
+        }
+
+        .elemento2.hover {
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transform: translate(5px, -5px);
+        }
+
+        .borda {
+            margin-top: 405px;
+            margin-right: 1300px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            position: absolute;
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transition: opacity 1s ease;
+        }
+
+
+        #buttonVideo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            /* Para que o vídeo não interfira com os eventos do botão */
+        }
+
+
+        .button5 {
+            margin-top: 400px;
+            margin-right: -1290px;
+            background-color: transparent;
+            padding: 1px;
+            flex-direction: column;
+            width: 250px;
+            border: 0px solid #ffffff;
+            position: absolute;
+            z-index: 1;
+            transition: border-color 1s
+        }
+
+        .dicord-button5 {
+            height: 386px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+            transition: border-color 1s, color 0.3s, background-color 0.3s, transform 0.3s;
+            width: 250px;
+            background-size: cover;
+            background: url('interrogação.mp4');
+            background-size: cover;
+
+        }
+
+        .dicord-button5:hover {
+            background-color: rgb(202, 152, 103);
+            color: rgb(0, 0, 0);
+            transform: translate(10px, -10px);
+        }
+
+        .element5 {
+            margin-top: 400px;
+            margin-right: -1290px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            transition: box-shadow 0.5s ease;
+            position: absolute;
+        }
+
+        .element5.hover {
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transform: translate(5px, -5px);
+        }
+
+        .elemento52 {
+            margin-top: 405px;
+            margin-right: -1280px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            transition: box-shadow 0.5s ease;
+            position: absolute;
+        }
+
+        .elemento52.hover {
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transform: translate(5px, -5px);
+        }
+
+        .borda5 {
+            margin-top: 405px;
+            margin-right: -1280px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            position: absolute;
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transition: opacity 1s ease;
+        }
+
+
+        #buttonVideo5 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            /* Para que o vídeo não interfira com os eventos do botão */
+        }
+
+        .button3 {
+            margin-top: 400px;
+
+            background-color: transparent;
+            padding: 1px;
+            flex-direction: column;
+            width: 250px;
+            border: 0px solid #ffffff;
+            position: absolute;
+            z-index: 1;
+            transition: border-color 1s
+        }
+
+        .dicord-button3 {
+            height: 386px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+            transition: border-color 1s, color 0.3s, background-color 0.3s, transform 0.3s;
+            width: 250px;
+            background-size: cover;
+            background: url('interrogação.mp4');
+            background-size: cover;
+
+        }
+
+        .dicord-button3:hover {
+            background-color: rgb(202, 152, 103);
+            color: rgb(0, 0, 0);
+            transform: translate(10px, -10px);
+        }
+
+        .element3 {
+            margin-top: 400px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            transition: box-shadow 0.5s ease;
+            position: absolute;
+        }
+
+        .element3.hover {
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transform: translate(5px, -5px);
+        }
+
+        .elemento32 {
+            margin-top: 405px;
+            margin-right: 10px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            transition: box-shadow 0.5s ease;
+            position: absolute;
+        }
+
+        .elemento32.hover {
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transform: translate(5px, -5px);
+        }
+
+        .borda3 {
+            margin-top: 405px;
+            margin-right: 10px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            position: absolute;
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transition: opacity 1s ease;
+        }
+
+
+        #buttonVideo3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            /* Para que o vídeo não interfira com os eventos do botão */
+        }
+
+        .button2 {
+            margin-top: 400px;
+            margin-right: 645px;
+            background-color: transparent;
+            padding: 1px;
+            flex-direction: column;
+            width: 250px;
+            border: 0px solid #ffffff;
+            position: absolute;
+            z-index: 1;
+            transition: border-color 1s
+        }
+
+        .dicord-button2 {
+            height: 386px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+            transition: border-color 1s, color 0.3s, background-color 0.3s, transform 0.3s;
+            width: 250px;
+            background-size: cover;
+            background: url('interrogação.mp4');
+            background-size: cover;
+
+        }
+
+        .dicord-button2:hover {
+            background-color: rgb(202, 152, 103);
+            color: rgb(0, 0, 0);
+            transform: translate(10px, -10px);
+        }
+
+        .element2 {
+            margin-top: 400px;
+            margin-right: 645px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            transition: box-shadow 0.5s ease;
+            position: absolute;
+        }
+
+        .element2.hover {
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transform: translate(5px, -5px);
+        }
+
+        .elemento22 {
+            margin-top: 405px;
+            margin-right: 655px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            transition: box-shadow 0.5s ease;
+            position: absolute;
+        }
+
+        .elemento22.hover {
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transform: translate(5px, -5px);
+        }
+
+        .borda2 {
+            margin-top: 405px;
+            margin-right: 655px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            position: absolute;
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transition: opacity 1s ease;
+        }
+
+
+        #buttonVideo2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            /* Para que o vídeo não interfira com os eventos do botão */
+        }
+
+
+        .button4 {
+            margin-top: 400px;
+            margin-right: -645px;
+            background-color: transparent;
+            padding: 1px;
+            flex-direction: column;
+            width: 250px;
+            border: 0px solid #ffffff;
+            position: absolute;
+            z-index: 1;
+            transition: border-color 1s
+        }
+
+        .dicord-button4 {
+            height: 386px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+            transition: border-color 1s, color 0.3s, background-color 0.3s, transform 0.3s;
+            width: 250px;
+            background-size: cover;
+            background: url('interrogação.mp4');
+            background-size: cover;
+
+        }
+
+        .dicord-button4:hover {
+            background-color: rgb(202, 152, 103);
+            color: rgb(0, 0, 0);
+            transform: translate(10px, -10px);
+        }
+
+        .element4 {
+            margin-top: 400px;
+            margin-right: -645px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            transition: box-shadow 0.5s ease;
+            position: absolute;
+        }
+
+        .element4.hover {
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transform: translate(5px, -5px);
+        }
+
+        .elemento42 {
+            margin-top: 405px;
+            margin-right: -635px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            transition: box-shadow 0.5s ease;
+            position: absolute;
+        }
+
+        .elemento42.hover {
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transform: translate(5px, -5px);
+        }
+
+        .borda4 {
+            margin-top: 405px;
+            margin-right: -635px;
+            width: 250px;
+            height: 386px;
+            background-color: #ffffff00;
+            position: absolute;
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            transition: opacity 1s ease;
+        }
+
+
+        #buttonVideo4 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            /* Para que o vídeo não interfira com os eventos do botão */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="../pages/1indexcategoria.html">
+            <div class="exit">
+                <img src="../assets/exit_preto.png" alt="exit">
+            </div>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../pages/indexCATEGORIAS.html">VIEW ALL CATEGORIES</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <div class="button">
+        <a href="../pages/3indexcategoria.html">
+            <button class="NEXT">NEXT ➔</button>
+        </a>
+    </div>
+    <div class="data">
+        <p>BEST ART DIRECTION</p>
+    </div>
+    <div class="texto-nomennes">
+        <p>SEE THE 2024 NOMINEES </p>
+    </div>
+    <div class="borda" id="borda"> </div>
+    <div class="elemento" id="elemento"> </div>
+    <div class="elemento2" id="elemento2"> </div>
+
+    <div class="borda2" id="borda2"> </div>
+    <div class="element2" id="element2"> </div>
+    <div class="elemento22" id="elemento22"> </div>
+
+    <div class="borda3" id="borda3"> </div>
+    <div class="element3" id="element3"> </div>
+    <div class="elemento32" id="elemento32"> </div>
+
+    <div class="borda4" id="borda4"> </div>
+    <div class="element4" id="element4"> </div>
+    <div class="elemento42" id="elemento42"> </div>
+
+    <div class="borda5" id="borda5"> </div>
+    <div class="element5" id="element5"> </div>
+    <div class="elemento52" id="elemento52"> </div>
+
+
+
+    <div class="button1" id="button1">
+        <button class="dicord-button1" id="animatedstatic" onmouseover="ativarHover()" onmouseout="desativarHover()">
+            <video id="buttonVideo" loop muted autoplay playsinline>
+                <source src="../games/neva.mp4" type="video/mp4">
+            </video> </button>
+    </div>
+
+    <div class="button2" id="button2">
+        <button class="dicord-button2" id="animatedstatic2" onmouseover="ativarHover2()" onmouseout="desativarHover2()">
+            <video id="buttonVideo2" loop muted autoplay playsinline>
+                <source src="../games/littlenightmares2.mp4" type="video/mp4">
+            </video> </button>
+    </div>
+
+    <div class="button3" id="button3">
+        <button class="dicord-button3" id="animatedstatic3" onmouseover="ativarHover3()" onmouseout="desativarHover3()">
+            <video id="buttonVideo3" loop muted autoplay playsinline>
+                <source src="../games/hollowknight.mp4" type="video/mp4">
+            </video> </button>
+    </div>
+
+    <div class="button4" id="button4">
+        <button class="dicord-button4" id="animatedstatic4" onmouseover="ativarHover4()" onmouseout="desativarHover4()">
+            <video id="buttonVideo4" loop muted autoplay playsinline>
+                <source src="../games/cultofthelamb.mp4" type="video/mp4">
+            </video> </button>
+    </div>
+
+    <div class="button5" id="button5">
+        <button class="dicord-button5" id="animatedstatic5" onmouseover="ativarHover5()" onmouseout="desativarHover5()">
+            <video id="buttonVideo5" loop muted autoplay playsinline>
+                <source src="../games/cuphead.mp4" type="video/mp4">
+            </video> </button>
+    </div>
+
+    <script>
+        var animatedstatic = document.getElementById('animatedstatic');
+        var buttonVideo = document.getElementById('buttonVideo');
+        var borda = document.getElementById('borda');
+        borda.style.opacity = 0;
+        var elemento = document.getElementById('elemento');
+        var elemento2 = document.getElementById('elemento2');
+        elemento.style.opacity = 0;
+        elemento2.style.opacity = 0;
+        setTimeout(function () {
+            animatedstatic.removeEventListener('ended', arguments.callee);
+            buttonVideo.pause();
+            borda.style.opacity = 1;
+            elemento.style.opacity = 1;
+            elemento2.style.opacity = 1;
+        }, 1850);
+
+        var animatedstatic2 = document.getElementById('animatedstatic2');
+        var buttonVideo2 = document.getElementById('buttonVideo2');
+        var borda2 = document.getElementById('borda2');
+        borda2.style.opacity = 0;
+        var element2 = document.getElementById('element2');
+        var elemento22 = document.getElementById('elemento22');
+        element2.style.opacity = 0;
+        elemento22.style.opacity = 0;
+
+        setTimeout(function () {
+            animatedstatic2.removeEventListener('ended', arguments.callee);
+            buttonVideo2.pause();
+            borda2.style.opacity = 1;
+            element2.style.opacity = 1;
+            elemento22.style.opacity = 1;
+        }, 1850);
+
+        var animatedstatic3 = document.getElementById('animatedstatic3');
+        var buttonVideo3 = document.getElementById('buttonVideo3');
+        var borda3 = document.getElementById('borda3');
+        borda3.style.opacity = 0;
+        var element3 = document.getElementById('element3');
+        var element32 = document.getElementById('elemento32');
+        element3.style.opacity = 0;
+        elemento32.style.opacity = 0;
+        setTimeout(function () {
+            animatedstatic3.removeEventListener('ended', arguments.callee);
+            buttonVideo3.pause();
+            borda3.style.opacity = 1;
+            element3.style.opacity = 1;
+            elemento32.style.opacity = 1;
+        }, 1850);
+
+        var animatedstatic4 = document.getElementById('animatedstatic4');
+        var buttonVideo4 = document.getElementById('buttonVideo4');
+        var borda4 = document.getElementById('borda4');
+        borda4.style.opacity = 0;
+        var element4 = document.getElementById('element4');
+        var elemento42 = document.getElementById('elemento42');
+        element4.style.opacity = 0;
+        elemento42.style.opacity = 0;
+        setTimeout(function () {
+            animatedstatic4.removeEventListener('ended', arguments.callee);
+            buttonVideo4.pause();
+            borda4.style.opacity = 1;
+            element4.style.opacity = 1;
+            elemento42.style.opacity = 1;
+        }, 1850);
+
+        var animatedstatic5 = document.getElementById('animatedstatic5');
+        var buttonVideo5 = document.getElementById('buttonVideo5');
+        var borda5 = document.getElementById('borda5');
+        borda5.style.opacity = 0;
+        var element5 = document.getElementById('element5');
+        var elemento52 = document.getElementById('elemento52');
+        element5.style.opacity = 0;
+        elemento52.style.opacity = 0;
+        setTimeout(function () {
+            animatedstatic5.removeEventListener('ended', arguments.callee);
+            buttonVideo5.pause();
+            borda5.style.opacity = 1;
+            element5.style.opacity = 1;
+            elemento52.style.opacity = 1;
+        }, 1850);
+
+
+
+
+
+        function ativarHover() {
+            document.getElementById('elemento').classList.add('hover');
+            document.getElementById('elemento2').classList.add('hover');
+        }
+        function desativarHover() {
+            document.getElementById('elemento').classList.remove('hover');
+            document.getElementById('elemento2').classList.remove('hover');
+        }
+
+        function ativarHover2() {
+            document.getElementById('element2').classList.add('hover');
+            document.getElementById('elemento22').classList.add('hover');
+        }
+        function desativarHover2() {
+            document.getElementById('element2').classList.remove('hover');
+            document.getElementById('elemento22').classList.remove('hover');
+        }
+
+        function ativarHover3() {
+            document.getElementById('element3').classList.add('hover');
+            document.getElementById('elemento32').classList.add('hover');
+        }
+        function desativarHover3() {
+            document.getElementById('element3').classList.remove('hover');
+            document.getElementById('elemento32').classList.remove('hover');
+        }
+
+        function ativarHover4() {
+            document.getElementById('element4').classList.add('hover');
+            document.getElementById('elemento42').classList.add('hover');
+        }
+        function desativarHover4() {
+            document.getElementById('element4').classList.remove('hover');
+            document.getElementById('elemento42').classList.remove('hover');
+        }
+
+
+        function ativarHover5() {
+            document.getElementById('element5').classList.add('hover');
+            document.getElementById('elemento52').classList.add('hover');
+        }
+        function desativarHover5() {
+            document.getElementById('element5').classList.remove('hover');
+            document.getElementById('elemento52').classList.remove('hover');
+        }
+
+        function redirecionarSeMobile() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Verifica se o dispositivo é Android
+            if (/android/i.test(userAgent)) {
+                window.location.href = "index_MOBILE.html";
+                return;
+            }
+
+            // Verifica se o dispositivo é iOS
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "index_MOBILE.html";
+                return;
+            }
+
+            // Verifica outros dispositivos móveis
+            if (/Mobi|BlackBerry|IEMobile|Opera Mini/i.test(userAgent)) {
+                window.location.href = "index_MOBILE.html";
+                return;
+            }
+        }
+    </script>
+</body>
+
+</html>

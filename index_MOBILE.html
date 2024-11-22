@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Compatível com Mobile</title>
+    <style>
+        /* Estilos globais */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: black;
+            
+        }
+        video {
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            /* Garante que o vídeo fique no fundo */
+        }
+        /* Cabeçalho */
+        header {
+            background-color: rgb(18, 18, 18);
+            color: rgb(202, 152, 103);
+            padding: 1em;
+            text-align: center;
+        }
+
+        /* Conteúdo principal */
+        main {
+            flex: 1;
+            padding: 1em;
+        }
+
+        #content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        #content2 {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .trailer_div {
+            text-align: center;
+            margin-top: 100px;
+        }
+        /* Botão */
+        button {
+            padding: 0.5em 1em;
+            border: none;
+            background-color: rgb(87, 87, 230);
+            color: rgb(0, 0, 0);
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 0.3em;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #ffffff;
+            transition: 0.3s;
+        }
+        /* Rodapé */
+        footer {
+            background-color: rgb(18, 18, 18);
+            text-align: center;
+            padding: 1em;
+        }
+        footer p {
+            color: rgb(202, 152, 103);
+        }
+        /* Estilos responsivos */
+        @media (max-width: 600px) {
+
+            header,
+            footer {
+                padding: 1em;
+                text-align: center;
+            }
+            main {
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>THE AXULÉIA GAME AWARDS</h1>
+    </header>
+    <main>
+        <section id="content">
+            <p>A votação do THE AXULÉIA AWARDS não é compativel com dispositívos móveis...</p>
+        </section>
+        <section id="content2">
+            <p>Entre em nosso Discord para mais informações!</p>
+            <a href="https://discord.gg/DA2sWRAHJY" target="_blank">
+            <button>DISCORD</button>
+            </a>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 The Axuléia Awards</p>
+    </footer>
+
+</body>
+
+</html>

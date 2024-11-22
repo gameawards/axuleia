@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" sizes="64x64"
+        href="https://i.im.ge/2024/05/26/KayUe6.axuleia-awards-removebg.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Axuleia Game Awards</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        #videoContainer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 1;
+            transition: opacity 0.5s;
+            /* Adiciona a transição de 1 segundo */
+        }
+        
+    </style>
+    <link rel="stylesheet" href="../css/styleCATEGORIAS.css">
+</head>
+
+<body>
+    <video id="backgroundVideo" autoplay muted>
+        <source src="../assets/categoria-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="videoContainer">
+        <video id="meuVideo" autoplay muted loop>
+            <source src="../assets/Composicao_1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="titulo" id="titulo">
+        <p> 2024 CATEGORIES</p>
+    </div>
+    <br>
+    <br>
+    <div class="elemento" id="elemento"> </div>
+    <div class="elemento2" id="elemento2"> </div>
+    <div class="elemento3" id="elemento3"> </div>
+    <div class="elemento4" id="elemento4"> </div>
+    <div class="elemento1B" id="elemento1B"> </div>
+    <div class="elemento2B" id="elemento2B"> </div>
+    <div class="elemento3B" id="elemento3B"> </div>
+    <div class="elemento4B" id="elemento4B"> </div>
+    <div class="elemento1C" id="elemento1C"> </div>
+    <div class="elemento2C" id="elemento2C"> </div>
+    <div class="elemento3C" id="elemento3C"> </div>
+    <div class="elemento4C" id="elemento4C"> </div>
+    <div class="button1" id="button1">
+        <a href="../pages/1indexcategoria.html">
+            <button class="dicord-button1" onmouseover="ativarHoverElemento()" onmouseout="desativarHoverElemento()">
+                GAME OF THE <br>YEAR</button></a>
+    </div>
+
+    <div class="button2" id="button2">
+        <a href="../pages/4indexcategoria.html">
+            <button class="dicord-button3" onmouseover="ativarHoverElemento3()" onmouseout="desativarHoverElemento3()">
+                BEST <br>GAMEPLAY </button></a>
+    </div>
+
+    <div class="button3" id="button3">
+        <a href="../pages/2indexcategoria.html">
+            <button class="dicord-button4" onmouseover="ativarHoverElemento2()" onmouseout="desativarHoverElemento2()">
+                BEST ART <br>DIRECTION</button></a>
+    </div>
+
+    <div class="button4" id="button4">
+        <a href="../pages/3indexcategoria.html">
+            <button class="dicord-button2" onmouseover="ativarHoverElemento4()" onmouseout="desativarHoverElemento4()">
+                BEST<br>SOUNDTRACK</button> </a>
+    </div>
+
+    <div class="button1B" id="button5">
+        <a href="../pages/5indexcategoria.html">
+            <button class="dicord-button1B" onmouseover="ativarHoverElemento1B()"
+                onmouseout="desativarHoverElemento1B()"> BEST<br>MULTIPLAYER</button></a>
+    </div>
+
+    <div class="button2B" id="button6">
+        <a href="../pages/6indexcategoria.html">
+            <button class="dicord-button2B" onmouseover="ativarHoverElemento2B()"
+                onmouseout="desativarHoverElemento2B()"> BEST <br>INDEPENDENT</button></a>
+    </div>
+
+    <div class="button3B" id="button7">
+        <a href="../pages/7indexcategoria.html">
+            <button class="dicord-button3B" onmouseover="ativarHoverElemento3B()"
+                onmouseout="desativarHoverElemento3B()">AUDIO<br>DESIGN</button></a>
+    </div>
+
+
+    <div class="button4B" id="button8">
+        <a href="../pages/8indexcategoria.html">
+            <button class="dicord-button4B" onmouseover="ativarHoverElemento4B()"
+                onmouseout="desativarHoverElemento4B()">CHARACTER <br>OF THE YEAR</button></a>
+    </div>
+
+    <div class="button1C" id="button9">
+        <a href="../pages/9indexcategoria.html">
+            <button class="dicord-button1C" onmouseover="ativarHoverElemento1C()"
+                onmouseout="desativarHoverElemento1C()">BEST<br>ACTION GAME</button></a>
+    </div>
+
+    <div class="button2C" id="button10">
+        <a href="../pages/10indexcategoria.html">
+            <button class="dicord-button2C" onmouseover="ativarHoverElemento2C()"
+                onmouseout="desativarHoverElemento2C()"> BEST<br>NARRATIVE</button></a>
+    </div>
+
+    <div class="button3C" id="button11">
+        <a href="../pages/11indexcategoria.html">
+            <button class="dicord-button3C" onmouseover="ativarHoverElemento3C()"
+                onmouseout="desativarHoverElemento3C()">BEST<br>RPG</button></a>
+    </div>
+
+    <div class="button4C" id="button12">
+        <a href="../pages/12indexcategoria.html">
+            <button class="dicord-button4C" onmouseover="ativarHoverElemento4C()"
+                onmouseout="desativarHoverElemento4C()"> WORST <br>GAME EVER</button></a>
+    </div>
+
+    <div class="exit" id="button13">
+        <a href="../pages/indexNOMEADOS.html">
+            <img src="../assets/exit.png" alt="">
+    </div>
+
+    <script>
+        var meuVideo = document.getElementById('meuVideo');
+        var titulo = document.getElementById('titulo');
+        var button1 = document.getElementById('button1');
+        var button2 = document.getElementById('button2');
+        var button3 = document.getElementById('button3');
+        var button4 = document.getElementById('button4');
+        var button5 = document.getElementById('button5');
+        var button6 = document.getElementById('button6');
+        var button7 = document.getElementById('button7');
+        var button8 = document.getElementById('button8');
+        var button9 = document.getElementById('button9');
+        var button10 = document.getElementById('button10');
+        var button11 = document.getElementById('button11');
+        var button12 = document.getElementById('button12');
+        var button13 = document.getElementById('button13');
+        titulo.style.opacity = 0;
+        button1.style.opacity = 0;
+        button2.style.opacity = 0;
+        button3.style.opacity = 0;
+        button4.style.opacity = 0;
+        button5.style.opacity = 0;
+        button6.style.opacity = 0;
+        button7.style.opacity = 0;
+        button8.style.opacity = 0;
+        button9.style.opacity = 0;
+        button10.style.opacity = 0;
+        button11.style.opacity = 0;
+        button12.style.opacity = 0;
+        button13.style.opacity = 0;
+        setTimeout(function () {
+            meuVideo.removeEventListener('ended', arguments.callee);
+            meuVideo.style.opacity = 0;
+            titulo.style.opacity = 1;
+            button1.style.opacity = 1;
+            button2.style.opacity = 1;
+            button3.style.opacity = 1;
+            button4.style.opacity = 1;
+            button5.style.opacity = 1;
+            button6.style.opacity = 1;
+            button7.style.opacity = 1;
+            button8.style.opacity = 1;
+            button9.style.opacity = 1;
+            button10.style.opacity = 1;
+            button11.style.opacity = 1;
+            button12.style.opacity = 1;
+            button13.style.opacity = 1;
+        }, 2000);
+
+        function ativarHoverElemento() {
+            document.getElementById('elemento').classList.add('hover');
+        }
+        function desativarHoverElemento() {
+            document.getElementById('elemento').classList.remove('hover');
+        }
+        function ativarHoverElemento2() {
+            document.getElementById('elemento2').classList.add('hover');
+        }
+        function desativarHoverElemento2() {
+            document.getElementById('elemento2').classList.remove('hover');
+        }
+        function ativarHoverElemento3() {
+            document.getElementById('elemento3').classList.add('hover');
+        }
+        function desativarHoverElemento3() {
+            document.getElementById('elemento3').classList.remove('hover');
+        }
+        function ativarHoverElemento4() {
+            document.getElementById('elemento4').classList.add('hover');
+        }
+        function desativarHoverElemento4() {
+            document.getElementById('elemento4').classList.remove('hover');
+        }
+        function ativarHoverElemento1B() {
+            document.getElementById('elemento1B').classList.add('hover');
+        }
+        function desativarHoverElemento1B() {
+            document.getElementById('elemento1B').classList.remove('hover');
+        }
+        function ativarHoverElemento2B() {
+            document.getElementById('elemento2B').classList.add('hover');
+        }
+        function desativarHoverElemento2B() {
+            document.getElementById('elemento2B').classList.remove('hover');
+        }
+        function ativarHoverElemento3B() {
+            document.getElementById('elemento3B').classList.add('hover');
+        }
+        function desativarHoverElemento3B() {
+            document.getElementById('elemento3B').classList.remove('hover');
+        }
+        function ativarHoverElemento4B() {
+            document.getElementById('elemento4B').classList.add('hover');
+        }
+        function desativarHoverElemento4B() {
+            document.getElementById('elemento4B').classList.remove('hover');
+        }
+        function ativarHoverElemento1C() {
+            document.getElementById('elemento1C').classList.add('hover');
+        }
+        function desativarHoverElemento1C() {
+            document.getElementById('elemento1C').classList.remove('hover');
+        }
+        function ativarHoverElemento2C() {
+            document.getElementById('elemento2C').classList.add('hover');
+        }
+        function desativarHoverElemento2C() {
+            document.getElementById('elemento2C').classList.remove('hover');
+        }
+        function ativarHoverElemento3C() {
+            document.getElementById('elemento3C').classList.add('hover');
+        }
+        function desativarHoverElemento3C() {
+            document.getElementById('elemento3C').classList.remove('hover');
+        }
+        function ativarHoverElemento4C() {
+            document.getElementById('elemento4C').classList.add('hover');
+        }
+        function desativarHoverElemento4C() {
+            document.getElementById('elemento4C').classList.remove('hover');
+        }
+
+        function redirecionarSeMobile() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Verifica se o dispositivo é Android
+            if (/android/i.test(userAgent)) {
+                window.location.href = "index_MOBILE.html";
+                return;
+            }
+
+            // Verifica se o dispositivo é iOS
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "index_MOBILE.html";
+                return;
+            }
+
+            // Verifica outros dispositivos móveis
+            if (/Mobi|BlackBerry|IEMobile|Opera Mini/i.test(userAgent)) {
+                window.location.href = "index_MOBILE.html";
+                return;
+            }
+        }
+    </script>
+</body>
+
+</html>

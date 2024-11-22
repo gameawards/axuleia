@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" sizes="64x64"
+        href="https://i.im.ge/2024/05/26/KayUe6.axuleia-awards-removebg.webp">
+    <title>Axuleia Game Awards</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            /* Garante que o vídeo fique no fundo */
+        }
+
+        .profile-container {
+            position: relative;
+            display: inline-block;
+            margin-right: 50px;
+        }
+
+        .profile-icon {
+            font-size: 55px;
+            /* Aumenta o tamanho do ícone */
+            cursor: pointer;
+            color: rgb(202, 152, 103);
+        }
+
+        .profile-icon:hover {
+            color: rgb(236, 184, 131);
+            transition: 0.3s;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            width: 200px;
+            z-index: 1;
+        }
+
+        .profile-container.show .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-divider {
+            border-top: 1px solid #ddd;
+            margin: 8px 0;
+        }
+
+        .trailer {
+            margin-top: 35px;
+            position: absolute;
+            transition: opacity 1s;
+            margin-left: 140px;
+        }
+
+        .footer {
+            background-color: #121212;
+            color: #e8a477;
+            padding: 40px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0 50px;
+        }
+
+        .footer-logo {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            margin-top: -10px;
+            margin-left: 150px;
+        }
+
+        .footer-logo img {
+            max-width: 200px;
+            /* Ajuste o tamanho da logo conforme necessário */
+            height: auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            text-align: justify;
+            margin-left: 200px;
+            /* Adiciona espaço à esquerda da seção de contatos */
+            margin-top: -35px;
+            /* Ajusta a posição vertical se necessário */
+            margin-bottom: 1%;
+        }
+
+        .footer-section h3 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-section p {
+            color: #e8a477;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .footer-social {
+            text-align: center;
+            flex: 1;
+            margin-left: 50px;
+        }
+
+        .footer-social h3 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-social a {
+            color: #e8a477;
+            padding: 5px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .footer-social a:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #e8a477;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-logo,
+            .footer-section,
+            .footer-social {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <video id="backgroundVideo" autoplay muted>
+        <source src="assets/background-video.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar" id="minhaNavbar">
+        <a href="index.html">
+            <div class="logo" id="logo">
+                <img src="assets/logonavbar.png" alt="logo" border="0">
+            </div>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="pages/indexNOMEADOS.html">NOMINEES</a></li>
+                <li><a href="pages/indexDISCORD.html">DISCORD</a></li>
+                <li><a href="pages/indexABOUT.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <div class="axuleiaawards" id="axuleiaawards">
+        <div class="texto-direita" id="textodireita">
+            <p>THE<br>AXULÉIA<br>AWARDS </p>
+        </div>
+        <div class="data" id="data">
+            <p>12.12.2024</p>
+        </div>
+    </div>
+    <div class="servidordodiscord" id="servidordodiscord">
+        <p>DISCORD SERVER EVENT</p>
+    </div>
+    <div class="backgroundblack" id="backgroundblack">
+        <iframe width="930" height="524" src="https://www.youtube.com/embed/UCRgD_R1WYc?start=2"
+            title="YouTube video player" class="trailer" id="trailer" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <img src="assets/golden.png" alt="black">
+
+        <div class="check" id="check">
+            <p>CHECK THE
+                <br>AXULÉIA
+                <br>OFFICIAL<br>CHENNEL
+            </p>
+        </div>
+    </div>
+    <div class="backgroundimg2" id="backgroundimg2">
+        <p class="titleEXPLORER" id="titleEXPLORER">EXPLORE</p>
+        <a href="pages/indexNOMEADOS.html">
+            <button class="votebutton1" id="votebutton1"></button></a>
+        <a href="pages/indexDISCORD.html">
+            <button class="votebutton2" id="votebutton2"></button></a>
+        <img width="1900" height="900" src="https://i.im.ge/2024/05/26/KayFeT.background2-img.png" alt="" border="0">
+        <div class="voteButton" id="voteButton">
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <!-- Logo à esquerda -->
+                <div class="footer-logo">
+                    <img src="assets/footericon.png" alt="Axuleia Logo" />
+                </div>
+
+                <!-- Redes Sociais no meio -->
+                <div class="footer-social">
+                    <h3>Siga-nos</h3>
+                    <a href="https://discord.gg/FcZRExEW"><i class="bi bi-discord"></i></a>
+                    <a href="https://www.instagram.com/axuleiainc/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/@THEAXULEIAAWARDSOFICIAL"><i class="bi bi-youtube"></i></a>
+                </div>
+
+                <!-- Seção Contatos à direita -->
+                <div class="footer-section contacts">
+                    <h3>Contatos</h3>
+                    <p>Email: axuleiainc@gmail.com</p>
+                    <p>Telefone: (19) 99737-6314</p>
+                    <p>Endereço: Espirito Santo Do Pinhal, São Paulo - SP</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Axuleia Awards. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var profileContainer = document.querySelector('.profile-container');
+                var profileIcon = document.querySelector('.profile-icon');
+
+                profileIcon.addEventListener('click', function () {
+                    profileContainer.classList.toggle('show');
+                });
+
+                // Fechar o menu se clicar fora
+                document.addEventListener('click', function (event) {
+                    if (!profileContainer.contains(event.target)) {
+                        profileContainer.classList.remove('show');
+                    }
+                });
+            });
+            function ajustarZoom() {
+                const larguraTela = window.screen.width;
+                const alturaTela = window.screen.height;
+                let zoom = 1;
+
+                if (larguraTela === 1366 && alturaTela === 768) {
+                    zoom = 0.7;
+                } else if (larguraTela === 1920 && alturaTela === 1080) {
+                    zoom = 1.0;
+                }
+                // Adicione mais condições conforme necessário
+
+                document.body.style.transform = `scale(${zoom})`;
+            }
+            window.onload = ajustarZoom;
+            var trailer = document.getElementById('trailer');
+            var minhaNavbar = document.getElementById('minhaNavbar');
+            var logo = document.getElementById('logo');
+            var voteButton = document.getElementById('voteButton');
+            var axuleiaawards = document.getElementById('axuleiaawards');
+            var textodireita = document.getElementById('textodireita');
+            var servidordodiscord = document.getElementById('servidordodiscord');
+            var data = document.getElementById('data');
+            var backgroundVideo = document.getElementById('backgroundVideo');
+            var backgroundblack = document.getElementById('backgroundblack');
+            trailer.style.zIndex = -1;
+            trailer.style.opacity = 0;
+            voteButton.style.opacity = 0;
+            axuleiaawards.style.opacity = 0;
+            textodireita.style.opacity = 0;
+            servidordodiscord.style.opacity = 0;
+            data.style.opacity = 0;
+            backgroundblack.opacity = 0;
+
+            setTimeout(function () {
+                trailer.style.zIndex = 1;
+            }, 1000);
+
+            setTimeout(function () {
+                trailer.style.opacity = 1;
+                voteButton.style.opacity = 1;
+                axuleiaawards.style.opacity = 1;
+                textodireita.style.opacity = 1;
+                servidordodiscord.style.opacity = 1;
+                data.style.opacity = 1;
+            }, 2000);
+
+            function redirecionarSeMobile() {
+                var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+                // Verifica se o dispositivo é Android
+                if (/android/i.test(userAgent)) {
+                    window.location.href = "index_MOBILE.html";
+                    return;
+                }
+
+                // Verifica se o dispositivo é iOS
+                if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                    window.location.href = "index_MOBILE.html";
+                    return;
+                }
+
+                // Verifica outros dispositivos móveis
+                if (/Mobi|BlackBerry|IEMobile|Opera Mini/i.test(userAgent)) {
+                    window.location.href = "index_MOBILE.html";
+                    return;
+                }
+            }
+            // Chama a função quando a página carrega
+            window.onload = redirecionarSeMobile;
+
+        </script>
+</body>
+
+</html>

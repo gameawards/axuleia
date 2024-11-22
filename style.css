@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'Baskerville';
+    src: url('Baskerville-Old-Face-Caps\ Regular.ttf') format('woff2'),
+        url('Baskerville-Old-Face-Caps\ Regular.ttf') format('woff');
+}
+
+.navbar {
+    background-color: rgb(18, 18, 18);
+    padding: 1px 4px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    margin-right: 1px;
+    /* Ajuste conforme necessário */
+    margin-left: 50px;
+}
+
+.logo img {
+    width: 100px;
+    /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.navbar li {
+    margin-right: 70px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(202, 152, 103);
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.content {
+    margin-top: 555px;
+    background-color: transparent;
+    padding: 1px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Adiciona centralização vertical */
+    text-align: center;
+    /* Adiciona centralização horizontal */
+    transition: opacity 1s ease-in-out;
+}
+
+.voteButton {
+    margin-top: -1100px;
+}
+
+.texto-direita {
+    position: absolute;
+    top: 150px;
+    right: 1400px;
+    padding: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    /* Adicionado para corrigir o layout */
+    transition: opacity 1s;
+    /* Adiciona transição suave */
+    z-index: -1;
+}
+
+.axuleiaawards {
+    position: absolute;
+    margin-left: 1900px;
+
+}
+
+
+.texto-direita p {
+    margin: 0;
+    font-size: 85px;
+    color: rgb(232, 164, 119);
+
+}
+
+.data p {
+    margin: 0;
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+    font-family: serif;
+    transition: opacity 1s ease-in-out;
+}
+
+.data {
+    top: 450px;
+    right: 1525px;
+    position: absolute;
+    padding: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    /* Adicionado para corrigir o layout */
+    transition: opacity 1s;
+    /* Adiciona transição suave */
+    z-index: -1;
+    transition: opacity 1s ease-in-out;
+}
+
+.servidordodiscord {
+    margin: 0;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.servidordodiscord {
+    position: relative;
+    margin-top: 410px;
+    margin-left: -1300px;
+    font-weight: bold;
+    transition: opacity 1s;
+    /* Adiciona transição suave */
+    z-index: -1;
+}
+
+
+.backgroundblack {
+    margin-top: 370px;
+    
+}
+
+.check {
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+    margin-left: 1160px;
+    margin-right: 0;
+    margin-top: -650px;
+    font-weight: bold;
+    padding: 20px;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    font-family: Baskerville;
+    position: absolute;
+}
+
+.backgroundimg2 {
+    width: 50;
+    height: 50;
+    margin-top: -4px;
+
+}
+
+footer {
+    background-color: rgb(18, 18, 18);
+    color: rgb(232, 164, 119);
+    text-align: center;
+    padding: 90px 0px;
+    /* Ajuste a altura vertical conforme necessário */
+    position: static;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1096px;
+}
+
+.logo-footer {
+    max-width: 170px;
+    /* Ajuste conforme necessário */
+    height: auto;
+    display: block;
+    margin-top: -50px;
+    /* Adiciona um pequeno espaçamento no topo */
+    margin-left: 100px;
+    /* Adiciona um pequeno espaçamento à esquerda */
+    position: absolute;
+}
+
+.texto-rodapé {
+    margin-top: -100px;
+    margin-right: 1310px;
+    padding: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    /* Adicionado para corrigir o layout */
+
+}
+
+.texto-rodapé p {
+    margin: 0;
+    font-size: 25px;
+    color: rgb(232, 164, 119);
+
+}
+
+.THE-rodapé {
+    margin-top: -127px;
+    margin-right: 1370px;
+    padding: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    /* Adicionado para corrigir o layout */
+}
+
+.THE-rodapé p {
+    margin: 0;
+    font-size: 25px;
+    color: rgb(232, 164, 119);
+}
+
+.risk_rodape {
+    max-width: 70px;
+    /* Ajuste conforme necessário */
+    height: auto;
+    display: block;
+    margin-top: -80px;
+    /* Adiciona um pequeno espaçamento no topo */
+    margin-left: 350px;
+    /* Adiciona um pequeno espaçamento à esquerda */
+}
+
+
+
+.titleEXPLORER {
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    margin-left: 1435px;
+    margin-top: 90px;
+    font-style: bold;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.votebutton2 {
+    background-image: url(assets/checkthediscordbuttom.png);
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    background-size: 100%;
+    border: 0;
+    margin-left: 200px;
+    margin-top: 250px;
+    cursor: pointer;
+}
+
+.votebutton2:hover {
+    background-image: url(assets/checkthediscordbuttomhover.png);
+    transition: color 0.3s, background-image 0.3s, transform 0.3s;
+}
+
+.votebutton1 {
+    background-image: url(assets/voteherebuttom.png);
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 250px;
+    background-size: 100%;
+    border: 0;
+    cursor: pointer;
+}
+
+.votebutton1:hover {
+    background-image: url(assets/voteherebuttomhover.png);
+    transition: color 0.3s, background-image 0.3s, transform 0.3s;
+}

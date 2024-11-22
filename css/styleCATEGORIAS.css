@@ -1,0 +1,496 @@
+.titulo p{
+    margin: 0;
+    font-size: 65px;
+    color: rgb(255, 255, 255);
+    font-family:serif ;
+}
+.titulo {
+    position: absolute;
+    margin-top: 50px;
+    padding: 20px;
+    font-weight: bold;
+    overflow: hidden; 
+    z-index: 1;
+}
+.button1 {
+    margin-top: 235px;
+    margin-left: -810px;
+    background-color: transparent;
+    padding: 1px;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid rgb(202, 152, 103); 
+    position:absolute;
+    z-index: 1;
+}
+.dicord-button1 {
+    padding: 60px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(202, 152, 103);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    width: 200px;
+}
+.dicord-button1:hover {
+    background-color: rgb(202, 152, 103);
+    color: rgb(0, 0, 0);
+    transform: translate(10px, -10px);
+}
+.elemento {
+    margin-top: 200px;
+    margin-left: -810px;
+      width: 200px;
+      height: 158px;
+      background-color: #ffffff00; 
+      transition: box-shadow 0.3s ease;  
+    } 
+    .elemento.hover {
+        box-shadow: 0 0 0 1px rgb(202, 152, 103);
+        transform: translate(5px, -5px);
+    }
+    .button2 {
+        margin-top: 235px;
+        margin-right: -810px;
+        background-color: transparent;
+        padding: 1px;
+        flex-direction: column;
+        width: 200px;
+        border: 2px solid #ffffff; 
+        position:absolute;
+        z-index: 1;
+    }
+    .dicord-button2 {
+        padding: 60px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        border: none;
+        cursor: pointer;
+        transition: color 0.3s, background-color 0.3s, transform 0.3s;
+        width: 200px;
+    }
+    .dicord-button2:hover {
+        background-color: rgb(202, 152, 103);
+        color: rgb(0, 0, 0);
+        transform: translate(10px, -10px);
+    }
+    .elemento3 {
+        margin-top: -158px;
+        margin-left: 810px;
+          width: 200px;
+          height: 158px;
+          background-color: #ffffff00; 
+          transition: box-shadow 0.3s ease;     
+        }
+        .elemento3.hover {
+            box-shadow: 0 0 0 1px #ffffff;
+            transform: translate(5px, -5px);
+        }
+    .elemento4 {
+        margin-top: -158px;
+        margin-left: 270px;
+          width: 200px;
+          height: 158px;
+          background-color: #ffffff00; 
+          transition: box-shadow 0.3s ease; 
+        }
+        .elemento4.hover {
+            box-shadow: 0 0 0 1px #ffffff;
+            transform: translate(5px, -5px);
+        }
+    .button3 {
+        margin-top: 235px;
+        margin-left: -270px;
+        background-color: transparent;
+        padding: 1px;
+        flex-direction: column;
+        width: 200px;
+        border: 2px solid #ffffff; 
+        position:absolute;
+        z-index: 1;
+    }
+    .dicord-button3 {
+        padding: 60px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        border: none;
+        cursor: pointer;
+        transition: color 0.3s, background-color 0.3s, transform 0.3s;
+        width: 200px;
+    }
+    .dicord-button3:hover {
+        background-color: rgb(202, 152, 103);
+        color: rgb(0, 0, 0);
+        transform: translate(10px, -10px);
+    }
+    .elemento2 {
+        margin-top: -158px;
+        margin-left: -270px;
+          width: 200px;
+          height: 158px;
+          background-color: #ffffff00; 
+          transition: box-shadow 0.3s ease;     
+        }
+        .elemento2.hover {
+            box-shadow: 0 0 0 1px #ffffff;
+            transform: translate(5px, -5px);
+        }
+    .button4 {
+        margin-top: 235px;
+        margin-left: 270px;
+        background-color: transparent;
+        padding: 1px;
+        flex-direction: column;
+        width: 200px;
+        border: 2px solid #ffffff; 
+        position:absolute;
+        z-index: 1;
+    }
+    .dicord-button4 {
+        padding: 60px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        border: none;
+        cursor: pointer;
+        transition: color 0.3s, background-color 0.3s, transform 0.3s;
+        width: 200px;  
+    }
+    .dicord-button4:hover {
+        background-color: rgb(202, 152, 103);
+        color: rgb(0, 0, 0);
+        transform: translate(10px, -10px);
+    }
+    .button1B {
+    margin-top: 460px;
+    margin-left: -810px;
+    background-color: transparent;
+    padding: 1px;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid #ffffff; 
+    position:absolute;
+    z-index: 1;
+}
+.dicord-button1B {
+    padding: 60px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    width: 200px;
+}
+.dicord-button1B:hover {
+    background-color: rgb(202, 152, 103);
+    color: rgb(0, 0, 0);
+    transform: translate(10px, -10px);
+}
+.elemento1B {
+    margin-top: 67px;
+    margin-left: -810px;
+      width: 200px;
+      height: 158px;
+      background-color: #ffffff00; 
+      transition: box-shadow 0.3s ease;      
+}
+    .elemento1B.hover {
+        box-shadow: 0 0 0 1px #ffffff;
+        transform: translate(5px, -5px);
+     }
+.button2B {
+    margin-top: 460px;
+    margin-left: -270px;
+    background-color: transparent;
+    padding: 1px;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid #ffffff; 
+    position:absolute;
+    z-index: 1;
+}
+.dicord-button2B {
+    padding: 60px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    width: 200px;  
+}
+.dicord-button2B:hover {
+    background-color: rgb(202, 152, 103);
+    color: rgb(0, 0, 0);
+    transform: translate(10px, -10px);
+}
+.elemento2B {
+    margin-top: -158px;
+    margin-left: -270px;
+      width: 200px;
+      height: 158px;
+      background-color: #ffffff00; 
+      transition: box-shadow 0.3s ease;      
+    }
+    .elemento2B.hover {
+        box-shadow: 0 0 0 1px #ffffff;
+        transform: translate(5px, -5px);
+    }
+.button3B {
+    margin-top: 460px;
+    margin-left: 270px;
+    background-color: transparent;
+    padding: 1px;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid #ffffff; 
+    position:absolute;
+    z-index: 1;
+}
+.dicord-button3B {
+    padding: 60px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    width: 200px;  
+}
+.dicord-button3B:hover {
+    background-color: rgb(202, 152, 103);
+    color: rgb(0, 0, 0);
+    transform: translate(10px, -10px);
+}
+.elemento3B {
+    margin-top: -158px;
+    margin-left: 270px;
+      width: 200px;
+      height: 158px;
+      background-color: #ffffff00; 
+      transition: box-shadow 0.3s ease;      
+    }
+    .elemento3B.hover {
+        box-shadow: 0 0 0 1px #ffffff;
+        transform: translate(5px, -5px);
+    }
+.button4B {
+    margin-top: 460px;
+    margin-left: 810px;
+    background-color: transparent;
+    padding: 1px;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid #ffffff; 
+    position:absolute;
+    z-index: 1;
+}
+.dicord-button4B {
+    padding: 60px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    width: 200px;  
+}
+.dicord-button4B:hover {
+    background-color: rgb(202, 152, 103);
+    color: rgb(0, 0, 0);
+    transform: translate(10px, -10px);
+}
+.elemento4B {
+    margin-top: -158px;
+    margin-left: 810px;
+      width: 200px;
+      height: 158px;
+      background-color: #ffffff00; 
+      transition: box-shadow 0.3s ease;      
+    }
+    .elemento4B.hover {
+        box-shadow: 0 0 0 1px #ffffff;
+        transform: translate(5px, -5px);
+    }
+.button1C {
+    margin-top: 685px;
+    margin-left: -810px;
+    background-color: transparent;
+    padding: 1px;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid #ffffff; 
+    position:absolute;
+    z-index: 1;
+}
+.dicord-button1C {
+    padding: 60px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    width: 200px;
+}
+.dicord-button1C:hover {
+    background-color: rgb(202, 152, 103);
+    color: rgb(0, 0, 0);
+    transform: translate(10px, -10px);
+}
+.elemento1C {
+    margin-top: 67px;
+    margin-left: -810px;
+      width: 200px;
+      height: 158px;
+      background-color: #ffffff00; 
+      transition: box-shadow 0.3s ease;      
+    }
+    .elemento1C.hover {
+        box-shadow: 0 0 0 1px #ffffff;
+        transform: translate(5px, -5px);
+    }
+.button2C {
+    margin-top: 685px;
+    margin-left: -270px;
+    background-color: transparent;
+    padding: 1px;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid #ffffff; 
+    position:absolute;
+    z-index: 1;
+}
+.dicord-button2C {
+    padding: 60px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    width: 200px;
+}
+.dicord-button2C:hover {
+    background-color: rgb(202, 152, 103);
+    color: rgb(0, 0, 0);
+    transform: translate(10px, -10px);
+}
+.elemento2C {
+    margin-top: -158px;
+    margin-left: -270px;
+      width: 200px;
+      height: 158px;
+      background-color: #ffffff00; 
+      transition: box-shadow 0.3s ease;      
+    }
+    .elemento2C.hover {
+        box-shadow: 0 0 0 1px #ffffff;
+        transform: translate(5px, -5px);
+    }
+.button3C {
+    margin-top: 685px;
+    margin-left: 270px;
+    background-color: transparent;
+    padding: 1px;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid #ffffff; 
+    position:absolute;
+    z-index: 1;
+}
+.dicord-button3C {
+    padding: 60px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    width: 200px;
+}
+.dicord-button3C:hover {
+    background-color: rgb(202, 152, 103);
+    color: rgb(0, 0, 0);
+    transform: translate(10px, -10px);
+}
+.elemento3C {
+    margin-top: -158px;
+    margin-left: 270px;
+      width: 200px;
+      height: 158px;
+      background-color: #ffffff00; 
+      transition: box-shadow 0.3s ease;      
+    }
+    .elemento3C.hover {
+        box-shadow: 0 0 0 1px #ffffff;
+        transform: translate(5px, -5px);
+    }
+.button4C {
+    margin-top: 685px;
+    margin-left: 810px;
+    background-color: transparent;
+    padding: 1px;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid #ffffff; 
+    position:absolute;
+    z-index: 1;
+}
+.dicord-button4C {
+    padding: 60px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    width: 200px;
+}
+.dicord-button4C:hover {
+    background-color: rgb(202, 152, 103);
+    color: rgb(0, 0, 0);
+    transform: translate(10px, -10px);
+}
+.elemento4C {
+    margin-top: -158px;
+    margin-left: 810px;
+      width: 200px;
+      height: 158px;
+      background-color: #ffffff00; 
+      transition: box-shadow 0.3s ease;      
+    }
+    .elemento4C.hover {
+        box-shadow: 0 0 0 1px #ffffff;
+        transform: translate(5px, -5px);
+    }
+.exit {
+    margin-top: 50px;
+    margin-right: 1500px;
+    position: absolute ;
+    background-color: transparent;
+    padding: 1px;
+    flex-direction: column;
+    width: 200px;
+    z-index: 1;
+}
+.exit img {
+    width: 30px;
+    z-index: 1;
+}
